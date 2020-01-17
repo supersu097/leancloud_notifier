@@ -7,7 +7,7 @@
 """
 
 import leancloud
-from apscheduler.schedulers.blocking import BlockingScheduler
+#from apscheduler.schedulers.blocking import BlockingScheduler
 from core import helper, config
 
 class Misc(object):
@@ -52,6 +52,7 @@ class Query(object):
 
 if __name__ == '__main__':
     q=Query()
-    scheduler = BlockingScheduler()
-    scheduler.add_job(q.main, 'interval', seconds=config.interval)
-    scheduler.start()
+    q.main()
+    #scheduler = BlockingScheduler()
+    #scheduler.add_job(q.main, 'interval', seconds=config.interval)
+    #scheduler.start()
