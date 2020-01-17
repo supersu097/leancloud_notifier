@@ -1,0 +1,2 @@
+leancloud==2.5.0
+APScheduler==3.6.3
